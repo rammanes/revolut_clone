@@ -48,6 +48,28 @@ The usual Flutter structure, nothing fancy:
 - `utils/` - helpers
 - `theme/` - styling
 
+## Project structure
+
+Modular feature-based architecture:
+
+```
+lib/
+├── core/              # Shared/common code
+│   ├── extensions/    # Dart extensions
+│   ├── providers/     # Theme state, app-wide providers
+│   ├── utils/         # Helper functions, constants
+│   └── widgets/       # General reusable widgets
+├── features/          # Feature modules (auth, home, transaction, etc.)
+│   ├── feature_name/
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   ├── repository/
+│   │   ├── screens/
+│   │   └── widgets/
+├── styles/            # Theme and colors
+└── main.dart
+```
+
 ## Development
 
 Working on feature branches and merging via PRs. Check the commits/PRs to see how things progress.
