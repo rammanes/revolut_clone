@@ -38,6 +38,9 @@ migrate_working_dir/
 .env.local
 .env.*.local
 
+# Assets
+assets/videos/
+
 # Symbolication related
 app.*.symbols
 
