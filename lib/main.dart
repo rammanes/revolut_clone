@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:revolut_clone/features/auth/screens/splash_screen.dart';
 import 'package:revolut_clone/styles/app_theme.dart';
 
 void main() {
@@ -11,9 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Revolut Clone',
       theme: AppTheme.darkTheme,
-      home: const Placeholder(),
+      home: const SplashScreen(),
     );
   }
 }
