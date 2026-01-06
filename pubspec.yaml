@@ -31,6 +31,8 @@ dependencies:
   google_fonts: ^6.3.2
   intl_phone_field: ^3.2.0
   video_player: ^2.10.1
+  iconsax: ^0.0.8
+  country_picker: ^2.0.27
 
 dev_dependencies:
   flutter_test:

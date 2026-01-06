@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:revolut_clone/core/routes/app_router.dart';
 import 'package:revolut_clone/features/auth/screens/splash_screen.dart';
 import 'package:revolut_clone/styles/app_theme.dart';
 
@@ -11,10 +12,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Revolut Clone',
       theme: AppTheme.darkTheme,
-      home: const SplashScreen(),
+      routerConfig: AppRouter.router,
     );
   }
 }

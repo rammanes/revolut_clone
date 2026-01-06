@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:revolut_clone/core/widgets/app_button.dart';
 import 'package:revolut_clone/styles/app_assets.dart';
 import 'package:revolut_clone/styles/app_colors.dart';
@@ -153,9 +154,21 @@ class _SplashScreenState extends State<SplashScreen>
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       AppButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          context.push('/create-account');
+                        },
                         text: 'Create Account',
                         variant: AppButtonVariant.primary,
+                      ),
+
+                      const SizedBox(height: 16),
+
+                      AppButton(
+                        onPressed: () {
+                          context.push('/login');
+                        },
+                        text: 'Log in',
+                        variant: AppButtonVariant.secondary,
                       ),
                     ],
                   ),

@@ -28,7 +28,7 @@ class AppButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final backgroundColor = variant == AppButtonVariant.primary
         ? AppColors.white
-        : Colors.grey.shade900;
+        : Colors.grey.shade700;
     final textColor = variant == AppButtonVariant.primary
         ? AppColors.black
         : AppColors.white;
